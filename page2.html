@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+     input {
+        margin: 0.75%;
+        border-color: black;
+        padding: 4px;
+     } 
+     label {
+        font-family: "Georgia", serif;
+     }
+     img {
+       height: 5%;
+       width: 5%;
+     }
+     table {
+       border-collapse: separate;
+       border-spacing: 100px 10px;
+      }
+      .btn-delete {
+        color: red;
+      }
+     #Number {
+        margin-right: 25px;
+     }
+     #sub {
+        background-color: #045FB4;
+        color: white;
+     }
+     span {
+        color:#045FB4;
+     }
+
+
+    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device, initial-scale=1.0">
+	<title>phone_directory</title>
+</head>
+<body>
+	<div> <center>
+    <img src="ph.png"><h1> My <span>Phone</span> Directory</h1>
+	<form id="phone-form">
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" id="Name">
+        </div>    
+         <div>
+            <label for="Number">Number</label>
+            <input type="text" id="Number">
+        </div>   
+        <input type="submit" value="Add number" id="sub"> 
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Number</th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody id="name-list"></tbody>
+    </table>
+</div> </center>
+<script src="java.js"></script>
+</body>
+</html>
